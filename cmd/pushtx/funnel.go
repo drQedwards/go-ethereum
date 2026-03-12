@@ -28,7 +28,10 @@ import (
 	"github.com/ethereum/go-ethereum/rpc"
 )
 
-// Addresses from the Tenderly simulation (41ec6e27-0532-4efd-8377-ad130b2982cc).
+// Addresses from the Tenderly simulation:
+// https://dashboard.tenderly.co/public/tallyxyz/project/simulator/41ec6e27-0532-4efd-8377-ad130b2982cc
+// The simulation demonstrates a Gnosis Safe USDC transfer used as a fallback
+// when the primary sender lacks sufficient ETH.
 var (
 	// GnosisSafeProxy that holds the USDC funds.
 	safeAddr = common.HexToAddress("0x4f2083f5fbede34c2714affb3105539775f7fe64")
